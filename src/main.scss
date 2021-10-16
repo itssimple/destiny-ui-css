@@ -3,6 +3,7 @@
 * {
   font-family: $generalBodyCopy;
   letter-spacing: 0.01rem;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,7 +12,9 @@ body {
   font-size: 1rem;
 }
 
-@import "./components/checkbox.scss";
-@import "./components/radio.scss";
-@import "./components/hr.scss";
-@import "./components/headers.scss";
+.destiny {
+  @import "./components/checkbox.scss";
+  @import "./components/radio.scss";
+  @import "./components/hr.scss";
+  @import "./components/headers.scss";
+}

@@ -1,0 +1,27 @@
+.fui {
+  color: #fff;
+  letter-spacing: 0.05rem;
+  font-size: 1.3rem;
+  font-family: $header55Roman;
+
+  &.body {
+    &.fiction {
+      font-family: $header56Italic;
+      letter-spacing: 0.06rem;
+    }
+  }
+
+  &.sub-title {
+    text-transform: uppercase;
+    &.bold {
+      font-family: $header65Medium;
+    }
+  }
+
+  &.numbers {
+    &.big {
+      font-family: $header65Medium;
+      font-size: 3rem;
+    }
+  }
+}
