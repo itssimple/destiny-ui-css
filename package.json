@@ -1,0 +1,16 @@
+{
+  "name": "destiny-ui-css",
+  "version": "1.0.0",
+  "description": "Destiny 2 CSS UI Framework",
+  "main": "index.js",
+  "author": "NoLifeKing85 / itssimple",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "node-sass --output-style expanded src/main.scss dist/destiny2-full-framework.css",
+    "watch-css": "nodemon -e scss -x \"yarn run build-css\""
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  }
+}

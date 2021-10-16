@@ -1,0 +1,103 @@
+.destiny {
+  .spaced-header {
+    font-family: $header55Roman;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    margin-bottom: 0.5rem;
+    color: #feefd5;
+  }
+
+  .header {
+    text-transform: uppercase;
+
+    &.subscreen {
+      font-family: $header75Bold;
+      font-size: 4rem;
+
+      letter-spacing: -0.05rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    &.general {
+      font-family: $header65Medium;
+      font-size: 1.2rem;
+      letter-spacing: 0.05rem;
+    }
+
+    &.tooltip {
+      font-family: $header65Medium;
+      font-size: 2.5rem;
+      letter-spacing: 0.05rem;
+    }
+
+    &.tracked-title {
+      font-family: $header65Medium;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+    }
+  }
+
+  .hud {
+    &.headers {
+      font-family: $header75Bold;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+    }
+
+    &.sub-header {
+      font-family: $header65Medium;
+      font-size: 1.2rem;
+      letter-spacing: 0.02rem;
+    }
+
+    &.description {
+      font-family: $header56Italic;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.05rem;
+    }
+  }
+
+  .fui {
+    &.body {
+      font-family: $header55Roman;
+      font-size: 1.3rem;
+      letter-spacing: 0.05rem;
+
+      &.fiction {
+        font-family: $header56Italic;
+        letter-spacing: 0.06rem;
+      }
+    }
+
+    &.sub-title {
+      text-transform: uppercase;
+      font-family: $header55Roman;
+      font-size: 1.3rem;
+      letter-spacing: 0.05rem;
+      &.bold {
+        font-family: $header65Medium;
+      }
+    }
+
+    &.numbers {
+      &.big {
+        font-family: $header65Medium;
+        font-size: 3rem;
+        letter-spacing: 0.05rem;
+      }
+    }
+  }
+
+  .active-text {
+    &.button {
+      font-family: $header55Roman;
+      font-size: 1.5rem;
+      letter-spacing: 0.45rem;
+      text-transform: uppercase;
+    }
+  }
+}
