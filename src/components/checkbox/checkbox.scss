@@ -1,0 +1,92 @@
+$checkboxChecked: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBDcmVhdGVkIHdpdGggSW5rc2NhcGUgKGh0dHA6Ly93d3cuaW5rc2NhcGUub3JnLykgLS0+Cjxzdmcgd2lkdGg9IjM0bW0iIGhlaWdodD0iMzRtbSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzQgMzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLDEpIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVhYTU2YSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHJlY3QgeD0iNSIgeT0iNSIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiBmaWxsPSIjNWFhNTZhIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KIDwvZz4KPC9zdmc+Cg==";
+$checkboxUnchecked: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBDcmVhdGVkIHdpdGggSW5rc2NhcGUgKGh0dHA6Ly93d3cuaW5rc2NhcGUub3JnLykgLS0+Cjxzdmcgd2lkdGg9IjM0bW0iIGhlaWdodD0iMzRtbSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzQgMzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLDEpIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVhYTU2YSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiA8L2c+Cjwvc3ZnPgo=";
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 2rem;
+  margin-right: 1rem;
+  cursor: default;
+  user-select: none;
+
+  &.block {
+    display: block;
+  }
+
+  label {
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: unset;
+
+    &:hover input[type="checkbox"]:not(:disabled) ~ span::before {
+      background-image: url($checkboxChecked);
+      background-size: cover;
+    }
+
+    span {
+      cursor: pointer;
+      line-height: 0.9rem;
+      vertical-align: middle;
+    }
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    ~ {
+      span::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.2rem;
+        width: 1.2rem;
+        background-image: url($checkboxUnchecked);
+        background-size: cover;
+        content: " ";
+      }
+
+      span::after {
+        position: absolute;
+        top: 0.2rem;
+        left: 0.2rem;
+        height: 1rem;
+        width: 1rem;
+        content: " ";
+        background-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+      }
+    }
+
+    &:checked {
+      ~ {
+        span::before {
+          background-image: url($checkboxChecked);
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  &.leftCheck {
+    padding-right: 2rem;
+    padding-left: unset;
+
+    input[type="checkbox"] {
+      ~ {
+        span::before {
+          right: 0 !important;
+          left: unset;
+        }
+
+        span::after {
+          right: 0.2rem !important;
+          left: unset;
+        }
+      }
+    }
+  }
+}

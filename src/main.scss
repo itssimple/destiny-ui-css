@@ -13,7 +13,7 @@ body {
 }
 
 .destiny {
-  @import "./components/checkbox.scss";
+  @import "./components/checkbox/checkbox.scss";
   @import "./components/radio.scss";
   @import "./components/hr.scss";
   @import "./components/headers.scss";
