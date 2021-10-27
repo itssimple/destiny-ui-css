@@ -1,0 +1,252 @@
+* {
+  font-family: "Neue Haas Grotesk Display Pro 55 Roman", "Helvetica";
+  letter-spacing: 0.01rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #b6bbb7;
+  font-size: 1rem;
+}
+
+.destiny .checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-right: 1rem;
+  cursor: default;
+  user-select: none;
+}
+
+.destiny .checkbox.block {
+  display: block;
+}
+
+.destiny .checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: unset;
+}
+
+.destiny .checkbox label:hover input[type="checkbox"]:not(:disabled) ~ span::before {
+  background-color: #388348;
+}
+
+.destiny .checkbox label span {
+  cursor: pointer;
+  line-height: 1rem;
+  vertical-align: middle;
+}
+
+.destiny .checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.destiny .checkbox input[type="checkbox"] ~ span::before {
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBDcmVhdGVkIHdpdGggSW5rc2NhcGUgKGh0dHA6Ly93d3cuaW5rc2NhcGUub3JnLykgLS0+Cjxzdmcgd2lkdGg9IjM0bW0iIGhlaWdodD0iMzRtbSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzQgMzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLDEpIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVhYTU2YSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiA8L2c+Cjwvc3ZnPgo=");
+  background-size: cover;
+  content: " ";
+}
+
+.destiny .checkbox input[type="checkbox"]:checked ~ span::before {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBDcmVhdGVkIHdpdGggSW5rc2NhcGUgKGh0dHA6Ly93d3cuaW5rc2NhcGUub3JnLykgLS0+Cjxzdmcgd2lkdGg9IjM0bW0iIGhlaWdodD0iMzRtbSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzQgMzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLDEpIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVhYTU2YSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHJlY3QgeD0iNSIgeT0iNSIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiBmaWxsPSIjNWFhNTZhIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KIDwvZz4KPC9zdmc+Cg==");
+  background-size: cover;
+}
+
+.destiny .checkbox.leftCheck {
+  padding-right: 1.5rem;
+  padding-left: unset;
+}
+
+.destiny .checkbox.leftCheck input[type="checkbox"] ~ span::before {
+  right: 0 !important;
+  left: unset;
+}
+
+.destiny .radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-right: 1rem;
+  cursor: default;
+  user-select: none;
+  margin-bottom: 0.2rem;
+}
+
+.destiny .radio.block {
+  display: block;
+}
+
+.destiny .radio label {
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: unset;
+}
+
+.destiny .radio label:hover input[type="radio"]:not(:disabled) ~ span::after {
+  background-color: #388348;
+}
+
+.destiny .radio label span {
+  cursor: pointer;
+  line-height: 1rem;
+  vertical-align: middle;
+}
+
+.destiny .radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.destiny .radio input[type="radio"] ~ span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  border: 0.1rem solid #5aa56a;
+  border-radius: 1rem;
+  content: " ";
+}
+
+.destiny .radio input[type="radio"] ~ span::after {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  height: 0.8rem;
+  width: 0.8rem;
+  content: " ";
+  border-radius: 0.8rem;
+  background-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.destiny .radio input[type="radio"]:checked ~ span::after {
+  background-color: #5aa56a;
+}
+
+.destiny .radio.leftRadio {
+  padding-right: 1.5rem;
+  padding-left: unset;
+}
+
+.destiny .radio.leftRadio input[type="radio"] ~ span::before {
+  right: 0 !important;
+  left: unset;
+}
+
+.destiny .radio.leftRadio input[type="radio"] ~ span::after {
+  right: 0.2rem !important;
+  left: unset;
+}
+
+.destiny hr {
+  border: 2px solid rgba(128, 128, 128, 0.5);
+}
+
+.destiny .spaced-header {
+  font-family: "Neue Haas Grotesk Display Pro 55 Roman", "Helvetica";
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: #feefd5;
+}
+
+.destiny .header {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.destiny .header.subscreen {
+  font-family: "Neue Haas Grotesk Display Pro 75 Bold", "Helvetica";
+  font-size: 4rem;
+  letter-spacing: -0.05rem;
+  font-weight: 800;
+}
+
+.destiny .header.general {
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.destiny .header.tooltip {
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.destiny .header.tracked-title {
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
+}
+
+.destiny .hud {
+  color: #fff;
+}
+
+.destiny .hud.headers {
+  font-family: "Neue Haas Grotesk Display Pro 75 Bold", "Helvetica";
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.destiny .hud.sub-header {
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+}
+
+.destiny .hud.description {
+  font-family: "Neue Haas Grotesk Display Pro 56 Roman Italic", "Helvetica";
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.destiny .fui {
+  color: #fff;
+  letter-spacing: 0.05rem;
+  font-size: 1.3rem;
+  font-family: "Neue Haas Grotesk Display Pro 55 Roman", "Helvetica";
+}
+
+.destiny .fui.body.fiction {
+  font-family: "Neue Haas Grotesk Display Pro 56 Roman Italic", "Helvetica";
+  letter-spacing: 0.06rem;
+}
+
+.destiny .fui.sub-title {
+  text-transform: uppercase;
+}
+
+.destiny .fui.sub-title.bold {
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
+}
+
+.destiny .fui.numbers.big {
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
+  font-size: 3rem;
+}
+
+.destiny .active-text.button {
+  font-family: "Neue Haas Grotesk Display Pro 55 Roman", "Helvetica";
+  font-size: 1.5rem;
+  letter-spacing: 0.45rem;
+  text-transform: uppercase;
+}
