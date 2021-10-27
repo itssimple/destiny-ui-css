@@ -1,5 +1,5 @@
-$checkboxChecked: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBDcmVhdGVkIHdpdGggSW5rc2NhcGUgKGh0dHA6Ly93d3cuaW5rc2NhcGUub3JnLykgLS0+Cjxzdmcgd2lkdGg9IjM0bW0iIGhlaWdodD0iMzRtbSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzQgMzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLDEpIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVhYTU2YSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHJlY3QgeD0iNSIgeT0iNSIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiBmaWxsPSIjNWFhNTZhIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KIDwvZz4KPC9zdmc+Cg==";
-$checkboxUnchecked: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBDcmVhdGVkIHdpdGggSW5rc2NhcGUgKGh0dHA6Ly93d3cuaW5rc2NhcGUub3JnLykgLS0+Cjxzdmcgd2lkdGg9IjM0bW0iIGhlaWdodD0iMzRtbSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzQgMzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLDEpIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzVhYTU2YSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiA8L2c+Cjwvc3ZnPgo=";
+$checkboxChecked: svg("src/components/checkbox/checked.svg");
+$checkboxUnchecked: svg("src/components/checkbox/unchecked.svg");
 
 .checkbox {
   display: inline-block;
@@ -43,7 +43,7 @@ $checkboxUnchecked: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
         left: 0;
         height: 1rem;
         width: 1rem;
-        background-image: url($checkboxUnchecked);
+        background-image: $checkboxUnchecked;
         background-size: cover;
         content: " ";
       }
@@ -52,7 +52,7 @@ $checkboxUnchecked: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
     &:checked {
       ~ {
         span::before {
-          background-image: url($checkboxChecked);
+          background-image: $checkboxChecked;
           background-size: cover;
         }
       }

@@ -6,11 +6,12 @@
   "author": "NoLifeKing85 / itssimple",
   "license": "MIT",
   "scripts": {
-    "build-css": "node-sass --output-style expanded src/main.scss docs/dist/destiny2-full-framework.css",
+    "build-css": "node-sass --functions=node_modules/sass-inline-svg/default --output-style expanded src/main.scss docs/dist/destiny2-full-framework.css",
     "watch-css": "nodemon -e scss -x \"yarn run build-css\""
   },
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.13",
+    "sass-inline-svg": "^1.2.3"
   }
 }
