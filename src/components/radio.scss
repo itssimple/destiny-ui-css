@@ -86,4 +86,41 @@
       }
     }
   }
+
+  @media (max-width: 486px) {
+    padding-left: 2.3rem;
+    font-size: 1.5rem;
+
+    label {
+      span {
+        line-height: 2rem;
+      }
+    }
+
+    input[type="radio"] {
+      ~ {
+        span::before {
+          top: 0;
+          height: 1.8rem;
+          width: 1.8rem;
+        }
+
+        span::after {
+          position: absolute;
+          top: 0.2rem;
+          left: 0.2rem;
+          height: 1.6rem;
+          width: 1.6rem;
+          content: " ";
+          border-radius: 0.8rem;
+          background-color: transparent;
+          transition: background-color 0.1s ease-in-out;
+        }
+      }
+    }
+
+    &.leftRadio {
+      padding-right: 2.3rem;
+    }
+  }
 }

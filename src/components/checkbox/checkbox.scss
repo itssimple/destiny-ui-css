@@ -72,4 +72,29 @@ $checkboxUnchecked: svg("src/components/checkbox/unchecked.svg");
       }
     }
   }
+
+  @media (max-width: 486px) {
+    padding-left: 2.3rem;
+    font-size: 1.5rem;
+
+    label {
+      span {
+        line-height: 2rem;
+      }
+    }
+
+    input[type="checkbox"] {
+      ~ {
+        span::before {
+          top: 0;
+          height: 1.8rem;
+          width: 1.8rem;
+        }
+      }
+    }
+
+    &.leftCheck {
+      padding-right: 2.3rem;
+    }
+  }
 }

@@ -73,6 +73,24 @@ body {
   left: unset;
 }
 
+@media (max-width: 486px) {
+  .destiny .checkbox {
+    padding-left: 2.3rem;
+    font-size: 1.5rem;
+  }
+  .destiny .checkbox label span {
+    line-height: 2rem;
+  }
+  .destiny .checkbox input[type="checkbox"] ~ span::before {
+    top: 0;
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  .destiny .checkbox.leftCheck {
+    padding-right: 2.3rem;
+  }
+}
+
 .destiny .radio {
   display: inline-block;
   position: relative;
@@ -153,6 +171,35 @@ body {
   left: unset;
 }
 
+@media (max-width: 486px) {
+  .destiny .radio {
+    padding-left: 2.3rem;
+    font-size: 1.5rem;
+  }
+  .destiny .radio label span {
+    line-height: 2rem;
+  }
+  .destiny .radio input[type="radio"] ~ span::before {
+    top: 0;
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  .destiny .radio input[type="radio"] ~ span::after {
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    content: " ";
+    border-radius: 0.8rem;
+    background-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+  }
+  .destiny .radio.leftRadio {
+    padding-right: 2.3rem;
+  }
+}
+
 .destiny hr {
   border: 2px solid rgba(128, 128, 128, 0.5);
 }
@@ -164,6 +211,12 @@ body {
   letter-spacing: 0.7rem;
   margin-bottom: 0.5rem;
   color: #feefd5;
+}
+
+@media (max-width: 486px) {
+  .destiny .spaced-header {
+    font-size: 1.8rem;
+  }
 }
 
 .destiny .header {
@@ -178,10 +231,22 @@ body {
   font-weight: 800;
 }
 
+@media (max-width: 486px) {
+  .destiny .header.subscreen {
+    font-size: 3.3rem;
+  }
+}
+
 .destiny .header.general {
   font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
   font-size: 1.2rem;
   letter-spacing: 0.05rem;
+}
+
+@media (max-width: 486px) {
+  .destiny .header.general {
+    font-size: 1rem;
+  }
 }
 
 .destiny .header.tooltip {
@@ -190,10 +255,22 @@ body {
   letter-spacing: 0.05rem;
 }
 
+@media (max-width: 486px) {
+  .destiny .header.tooltip {
+    font-size: 2.3rem;
+  }
+}
+
 .destiny .header.tracked-title {
   font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
   font-size: 2.5rem;
   letter-spacing: 1rem;
+}
+
+@media (max-width: 486px) {
+  .destiny .header.tracked-title {
+    font-size: 2.3rem;
+  }
 }
 
 .destiny .hud {
@@ -206,10 +283,22 @@ body {
   font-size: 1.3rem;
 }
 
+@media (max-width: 486px) {
+  .destiny .hud.headers {
+    font-size: 1.2rem;
+  }
+}
+
 .destiny .hud.sub-header {
   font-family: "Neue Haas Grotesk Display Pro 65 Medium", "Helvetica";
   font-size: 1.2rem;
   letter-spacing: 0.02rem;
+}
+
+@media (max-width: 486px) {
+  .destiny .hud.sub-header {
+    font-size: 1.1rem;
+  }
 }
 
 .destiny .hud.description {
@@ -219,11 +308,23 @@ body {
   letter-spacing: 0.05rem;
 }
 
+@media (max-width: 486px) {
+  .destiny .hud.description {
+    font-size: 1.1rem;
+  }
+}
+
 .destiny .fui {
   color: #fff;
   letter-spacing: 0.05rem;
   font-size: 1.3rem;
   font-family: "Neue Haas Grotesk Display Pro 55 Roman", "Helvetica";
+}
+
+@media (max-width: 486px) {
+  .destiny .fui {
+    font-size: 1.1rem;
+  }
 }
 
 .destiny .fui.body.fiction {
@@ -244,9 +345,21 @@ body {
   font-size: 3rem;
 }
 
+@media (max-width: 486px) {
+  .destiny .fui.numbers.big {
+    font-size: 2.5rem;
+  }
+}
+
 .destiny .active-text.button {
   font-family: "Neue Haas Grotesk Display Pro 55 Roman", "Helvetica";
   font-size: 1.5rem;
   letter-spacing: 0.45rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 486px) {
+  .destiny .active-text.button {
+    font-size: 1.3rem;
+  }
 }

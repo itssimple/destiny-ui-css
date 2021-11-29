@@ -5,6 +5,9 @@
   &.subscreen {
     font-family: $header75Bold;
     font-size: 4rem;
+    @media (max-width: 486px) {
+      font-size: 3.3rem;
+    }
 
     letter-spacing: -0.05rem;
     font-weight: 800;
@@ -13,18 +16,27 @@
   &.general {
     font-family: $header65Medium;
     font-size: 1.2rem;
+    @media (max-width: 486px) {
+      font-size: 1rem;
+    }
     letter-spacing: 0.05rem;
   }
 
   &.tooltip {
     font-family: $header65Medium;
     font-size: 2.5rem;
+    @media (max-width: 486px) {
+      font-size: 2.3rem;
+    }
     letter-spacing: 0.05rem;
   }
 
   &.tracked-title {
     font-family: $header65Medium;
     font-size: 2.5rem;
+    @media (max-width: 486px) {
+      font-size: 2.3rem;
+    }
     letter-spacing: 1rem;
   }
 }
